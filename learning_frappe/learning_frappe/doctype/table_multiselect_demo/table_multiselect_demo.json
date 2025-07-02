@@ -1,0 +1,55 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-06-20 15:46:17.577736",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "column_break_ujlg",
+  "dynamic",
+  "column_break_nyjg",
+  "phone"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "column_break_ujlg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "dynamic",
+   "fieldtype": "Link",
+   "label": "Dynamic",
+   "options": "Random"
+  },
+  {
+   "fieldname": "column_break_nyjg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-06-20 15:58:06.768639",
+ "modified_by": "Administrator",
+ "module": "Learning Frappe",
+ "name": "Table Multiselect Demo",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

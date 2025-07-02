@@ -1,0 +1,97 @@
+{
+ "_liked_by": "[\"Administrator\"]",
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "Show-.###",
+ "creation": "2025-06-28 15:49:48.970019",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "movie",
+  "theatre",
+  "screen",
+  "column_break_gzfj",
+  "show_time",
+  "base_ticket_price",
+  "language",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "movie",
+   "fieldtype": "Link",
+   "label": "Movie",
+   "options": "Movie"
+  },
+  {
+   "fieldname": "theatre",
+   "fieldtype": "Link",
+   "label": "Theatre",
+   "options": "Theatre"
+  },
+  {
+   "fieldname": "screen",
+   "fieldtype": "Link",
+   "label": "Screen",
+   "options": "Screen"
+  },
+  {
+   "fieldname": "column_break_gzfj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "show_time",
+   "fieldtype": "Datetime",
+   "label": "Show Time"
+  },
+  {
+   "fieldname": "base_ticket_price",
+   "fieldtype": "Currency",
+   "label": "Base Ticket Price"
+  },
+  {
+   "fieldname": "language",
+   "fieldtype": "Select",
+   "label": "Language",
+   "options": "\nTamil\nTelugu\nKannada\nMalayalam\nHindi"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Show",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-06-30 11:20:51.498959",
+ "modified_by": "Administrator",
+ "module": "Learning Frappe",
+ "name": "Show",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

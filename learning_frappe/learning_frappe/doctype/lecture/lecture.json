@@ -1,0 +1,81 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "Lecture-.###",
+ "creation": "2025-06-21 15:33:22.179306",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "course",
+  "column_break_mapy",
+  "lecture_title",
+  "column_break_uuzu",
+  "lecture_date",
+  "section_break_iscm",
+  "lecture_topic"
+ ],
+ "fields": [
+  {
+   "fieldname": "course",
+   "fieldtype": "Link",
+   "label": "Course",
+   "options": "Course"
+  },
+  {
+   "fieldname": "column_break_mapy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lecture_title",
+   "fieldtype": "Data",
+   "label": "Lecture Title"
+  },
+  {
+   "fieldname": "column_break_uuzu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lecture_date",
+   "fieldtype": "Date",
+   "label": "Lecture Date"
+  },
+  {
+   "fieldname": "section_break_iscm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "lecture_topic",
+   "fieldtype": "Table",
+   "label": "Lecture Topic",
+   "options": "Lecture Topic"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-06-21 15:45:17.831043",
+ "modified_by": "Administrator",
+ "module": "Learning Frappe",
+ "name": "Lecture",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "search_fields": "lecture_title",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,168 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "Ticket-.###",
+ "creation": "2025-06-27 15:13:30.051914",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_name",
+  "phone",
+  "column_break_pqjs",
+  "email",
+  "current_date",
+  "section_break_swde",
+  "theatre_name",
+  "movie_name",
+  "language",
+  "column_break_zldi",
+  "ticket_count",
+  "ticket_price",
+  "image",
+  "section_break_dnue",
+  "payment_method",
+  "paid",
+  "show_datetime",
+  "column_break_qcpf",
+  "ticket",
+  "ticket_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Customer Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Phone",
+   "in_list_view": 1,
+   "label": "Phone",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_pqjs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "current_date",
+   "fieldtype": "Date",
+   "label": "Current Date"
+  },
+  {
+   "fieldname": "section_break_swde",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "movie_name",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Movie Name",
+   "options": "\nLeo\nRetro\nJailer\nAmaran\nMaharaja",
+   "reqd": 1
+  },
+  {
+   "fieldname": "language",
+   "fieldtype": "Select",
+   "label": "Language",
+   "options": "\nTamil\nTelugu\nMalayalam\nKannada"
+  },
+  {
+   "fieldname": "column_break_zldi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ticket_count",
+   "fieldtype": "Select",
+   "label": "Ticket Count",
+   "options": "\n1\n2\n3\n4\n5\n6"
+  },
+  {
+   "fieldname": "ticket_price",
+   "fieldtype": "Currency",
+   "label": "Ticket Price"
+  },
+  {
+   "fieldname": "section_break_dnue",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "payment_method",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Payment Method",
+   "options": "\nUPI\nCredit/Debit Card\nNet banking",
+   "reqd": 1
+  },
+  {
+   "fieldname": "show_datetime",
+   "fieldtype": "Datetime",
+   "label": "Show Date/Time"
+  },
+  {
+   "fieldname": "column_break_qcpf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ticket",
+   "fieldtype": "Barcode",
+   "label": "Ticket"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "default": "0",
+   "fieldname": "paid",
+   "fieldtype": "Check",
+   "label": "Paid?"
+  },
+  {
+   "fieldname": "theatre_name",
+   "fieldtype": "Select",
+   "label": "Theatre Name",
+   "options": "\nKasi\nRohini\nNexus\nMayajal"
+  },
+  {
+   "fieldname": "ticket_id",
+   "fieldtype": "Data",
+   "label": "Ticket ID"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-06-28 11:47:24.677478",
+ "modified_by": "Administrator",
+ "module": "Learning Frappe",
+ "name": "Ticket Booking",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

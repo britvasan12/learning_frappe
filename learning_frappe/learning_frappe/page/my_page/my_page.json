@@ -1,0 +1,23 @@
+{
+ "content": null,
+ "creation": "2025-06-30 18:51:18.477640",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2025-06-30 18:51:30.767401",
+ "modified_by": "Administrator",
+ "module": "Learning Frappe",
+ "name": "my-page",
+ "owner": "Administrator",
+ "page_name": "my-page",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "My Page"
+}

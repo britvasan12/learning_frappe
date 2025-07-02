@@ -1,0 +1,124 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:Leave AT-{###}",
+ "creation": "2025-06-20 16:23:07.072186",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "emp_id",
+  "phone",
+  "email",
+  "no_of_days",
+  "mailed_for_leave",
+  "column_break_cquu",
+  "reason_for_leave",
+  "today_date",
+  "from",
+  "to",
+  "informed_to",
+  "leave_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "emp_id",
+   "fieldtype": "Data",
+   "label": "Emp ID"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Phone",
+   "label": "Phone"
+  },
+  {
+   "default": "0",
+   "fieldname": "no_of_days",
+   "fieldtype": "Select",
+   "label": "No. of Days",
+   "options": "\n0\n1\n2\n3"
+  },
+  {
+   "fieldname": "column_break_cquu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reason_for_leave",
+   "fieldtype": "Select",
+   "label": "Reason for Leave",
+   "options": "\nSick Leave\nEmergency Leave\nCasual Leave\nFestival Leave\nOthers"
+  },
+  {
+   "fieldname": "today_date",
+   "fieldtype": "Date",
+   "label": "Today Date"
+  },
+  {
+   "fieldname": "from",
+   "fieldtype": "Date",
+   "label": "From"
+  },
+  {
+   "fieldname": "to",
+   "fieldtype": "Date",
+   "label": "To"
+  },
+  {
+   "fieldname": "informed_to",
+   "fieldtype": "Select",
+   "label": "Informed To",
+   "options": "\nTL\nHR\nPM\nMD"
+  },
+  {
+   "default": "0",
+   "fieldname": "mailed_for_leave",
+   "fieldtype": "Check",
+   "label": "Mailed For Leave"
+  },
+  {
+   "fieldname": "leave_status",
+   "fieldtype": "Select",
+   "label": "Leave Status",
+   "options": "\nPending\nApproved By HR\nApproved By Manager\nApproved By MD\nCancelled"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-06-20 17:27:31.496003",
+ "modified_by": "Administrator",
+ "module": "Learning Frappe",
+ "name": "Leave Application Tracking",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
