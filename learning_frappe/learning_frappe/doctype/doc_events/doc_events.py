@@ -6,59 +6,73 @@ from frappe.model.document import Document
 
 
 class DocEvents(Document):
-	pass
-	# def before_save(self):
-	# 	self.email = "brit@gmail.com"
-	# 	frappe.msgprint("Before save event triggered")                          --> Worked
 
-	# def after_save(self):
-	# 	frappe.msgprint("After Save event Triggered")                           --> Not Working
+	# --> Worked
+	def before_save(self):
+		self.email = "brit@gmail.com"
+		frappe.msgprint("Before save event triggered")                          
+	
+	# --> Not Working
+	def after_save(self):
+		frappe.msgprint("After Save event Triggered")                           
 
-	# def on_save(self):
-	# 	frappe.msgprint('On save event triggered --> After Save')               --> Not Working
+	# --> Not Working
+	def on_save(self):
+		frappe.msgprint('On save event triggered --> After Save')              
 
-	# def before_insert(self):
-	# 	self.bio = "Developer"
-	# 	frappe.msgprint("Before Insert event Triggered")                        -->Worked
+	# --> Worked
+	def before_insert(self):
+		self.bio = "Developer"
+		frappe.msgprint("Before Insert event Triggered")                        
 
-	# def after_insert(self):
-	# 	self.phone = "6385517658"
-	# 	frappe.msgprint("After Insert event Triggered")                         --> Worked
+	# --> Worked
+	def after_insert(self):
+		self.phone = "6385517658"
+		frappe.msgprint("After Insert event Triggered")                         
 
-	# def before_validate(self):
-	# 	if not self.email or '@' not in self.email:
-	# 		frappe.throw("Before Validate event Triggered--> Invalid Email")    --> Worked
+	# --> Worked
+	def before_validate(self):
+		if not self.email or '@' not in self.email:
+			frappe.throw("Before Validate event Triggered--> Invalid Email")    
 
-	# def before_submit(self):
-	# 	if not self.phone or len(self.phone)<10:
-	# 		frappe.throw("Before Validate event Triggered--> Invalid Phone Number")
-	# 	else:
-	# 		frappe.msgprint(f'{self.name} Saved')                               --> Worked
+	# --> Worked
+	def before_submit(self):
+		if not self.phone or len(self.phone)<10:
+			frappe.throw("Before Validate event Triggered--> Invalid Phone Number")
+		else:
+			frappe.msgprint(f'{self.name} Saved')                               
 
-	# def after_submit(self):
-	# 	frappe.msgprint(f'After submit event Triggered')                        --> Not Working
+	# --> Not Working
+	def after_submit(self):
+		frappe.msgprint(f'After submit event Triggered')                        
 
-	# def on_submit(self):
-	# 	self.last_name = ' '
-	# 	self.full_name = f'{self.first_name} {self.last_name}'                  --> Worked
+	# --> Worked
+	def on_submit(self):
+		self.last_name = ' '
+		self.full_name = f'{self.first_name} {self.last_name}'                 
 
-	# 	frappe.msgprint(f'After submit event triggered with name of on submit') --> Worked
+		frappe.msgprint(f'After submit event triggered with name of on submit') 
 
+	# --> Worked
+	def before_cancel(self):
+		frappe.throw("Before Cancel event Triggered")                       
 
-	# def before_cancel(self):
-	# 	frappe.throw("Before Cancel event Triggered")                           --> Worked
+	# --> Not Working
+	def after_cancel(self):
+		frappe.throw("After submit event triggered")                            
 
-	# def after_cancel(self):
-	# 	frappe.throw("After submit event triggered")                            --> Not Working
+	# --> Worked
+	def on_cancel(self):
+		frappe.throw("Do you want to cancel? --> on cancel AS after_cancel")    
 
-	# def on_cancel(self):
-	# 	frappe.throw("Do you want to cancel? --> on cancel AS after_cancel")    --> Worked
+	# --> Not Working
+	def before_delete(self):
+		frappe.msgprint("Do you want to Delete?")                               
 
-	# def before_delete(self):
-	# 	frappe.msgprint("Do you want to Delete?")                               --> Not Working
+	# --> Worked
+	def after_delete(self):
+		frappe.throw("Do you want to Delete?")                                  
 
-	# def after_delete(self):
-	# 	frappe.throw("Do you want to Delete?")                                  --> Worked
-
-	# def on_delete(self):
-	# 	frappe.msgprint("Do you want to Delete?")                                --> Not Working
+	# --> Not Working
+	def on_delete(self):
+		frappe.msgprint("Do you want to Delete?")                                

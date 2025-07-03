@@ -9,13 +9,13 @@
  "field_order": [
   "select_lzqy",
   "show",
+  "amended_from",
   "column_break_nydi",
   "booking_time",
   "payment_status",
   "checked_in",
   "section_break_ywbg",
-  "booked_seat",
-  "amended_from"
+  "booked_seat"
  ],
  "fields": [
   {
@@ -76,7 +76,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-06-30 12:11:33.683014",
+ "modified": "2025-07-02 17:06:32.623411",
  "modified_by": "Administrator",
  "module": "Learning Frappe",
  "name": "Booking",
