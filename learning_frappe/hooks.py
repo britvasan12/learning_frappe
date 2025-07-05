@@ -242,3 +242,18 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+# doctype_js = {
+#     "Ticket Booking": "public/js/ticket_booking_list.js"
+# }
+
+doc_events = {
+    "Task": {
+        "after_insert": "learning_frappe.learning_frappe.realtime.notify_task",
+        "on_update": "learning_frappe.learning_frappe.realtime.notify_task",
+    },
+    # "Task Comment": {
+    #     "after_insert": "learning_frappe.learning_frappe.realtime.notify_comment",
+    # },
+}
+
+

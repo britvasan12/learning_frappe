@@ -203,7 +203,7 @@ frappe.ui.form.on("Demo Total", {
     //         frm.set_intro('Please add a Fullname!', 'red')
     //     }
     // }
-
+        
     // status: frm =>{
     // frm.set_df_property('status', 'options',['','New', 'Old'])
     // is_allowed = frappe.user_roles.includes("New User");

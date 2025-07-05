@@ -1,0 +1,19 @@
+{
+ "content": null,
+ "creation": "2025-07-04 15:16:11.415746",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2025-07-04 15:16:11.415746",
+ "modified_by": "Administrator",
+ "module": "Learning Frappe",
+ "name": "board-view",
+ "owner": "Administrator",
+ "page_name": "board-view",
+ "roles": [],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Kanban Board"
+}

@@ -1,0 +1,109 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "T-.#####",
+ "creation": "2025-07-04 11:28:01.399466",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "subject",
+  "board",
+  "status",
+  "assignee",
+  "column_break_vcmr",
+  "priority",
+  "story_points",
+  "due_date",
+  "column_order",
+  "section_break_ftjx",
+  "task_comment"
+ ],
+ "fields": [
+  {
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "label": "Subject"
+  },
+  {
+   "fieldname": "board",
+   "fieldtype": "Link",
+   "label": "Board",
+   "options": "Board"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nBacklog\nTodo\nIn Progress\nReview\nDone"
+  },
+  {
+   "fieldname": "assignee",
+   "fieldtype": "Link",
+   "label": "Assignee",
+   "options": "User"
+  },
+  {
+   "fieldname": "column_break_vcmr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "label": "Priority",
+   "options": "\nLow\nMedium\nHigh"
+  },
+  {
+   "fieldname": "story_points",
+   "fieldtype": "Int",
+   "label": "Story Points"
+  },
+  {
+   "fieldname": "due_date",
+   "fieldtype": "Date",
+   "label": "Due Date"
+  },
+  {
+   "fieldname": "column_order",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Column Order"
+  },
+  {
+   "fieldname": "section_break_ftjx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "task_comment",
+   "fieldtype": "Table",
+   "label": "Task Comment",
+   "options": "Task Comment"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-07-04 17:37:56.798131",
+ "modified_by": "Administrator",
+ "module": "Learning Frappe",
+ "name": "Task",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
