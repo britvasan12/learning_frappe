@@ -257,3 +257,4 @@ doc_events = {
 }
 
 
+app_include_js = "/assets/learning_frappe/js/alert.js"

@@ -1,0 +1,104 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "SMS-.###",
+ "creation": "2025-07-07 19:47:17.923218",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_zuaj",
+  "school_name",
+  "phone",
+  "column_break_txpu",
+  "total_score",
+  "remarks",
+  "amended_from",
+  "section_break_rwkz",
+  "student_mark"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_zuaj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Student Mark Sheet",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "school_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "School Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "column_break_txpu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_score",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Total Score",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Select",
+   "label": "Remarks",
+   "options": "\nGood\nAverage\nPoor"
+  },
+  {
+   "fieldname": "section_break_rwkz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "student_mark",
+   "fieldtype": "Table",
+   "label": "Student Mark",
+   "options": "Student Mark"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-07-07 19:55:42.276271",
+ "modified_by": "Administrator",
+ "module": "Learning Frappe",
+ "name": "Student Mark Sheet",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
