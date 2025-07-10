@@ -1,19 +1,19 @@
 {
  "content": null,
- "creation": "2025-07-04 15:16:11.415746",
+ "creation": "2025-07-10 11:28:25.579796",
  "docstatus": 0,
  "doctype": "Page",
  "idx": 0,
- "modified": "2025-07-09 11:01:54.872060",
+ "modified": "2025-07-10 11:28:25.579796",
  "modified_by": "Administrator",
  "module": "Learning Frappe",
- "name": "board-view",
+ "name": "realtime-sales",
  "owner": "Administrator",
- "page_name": "board-view",
+ "page_name": "realtime-sales",
  "roles": [],
  "script": null,
  "standard": "Yes",
  "style": null,
- "system_page": 0,
- "title": "Kanban Board"
+ "system_page": 1,
+ "title": "Realtime sales"
 }

@@ -5,38 +5,38 @@ frappe.ui.form.on("Dialog API", {
     refresh(frm) {
         // Create Dialog form via code
 
-        // let D = new frappe.ui.Dialog({
-        //     title: 'Enter Details',
-        //     fields: [
-        //         {
-        //             label: 'Full Name',
-        //             fieldname: 'full_name',
-        //             fieldtype: 'Data'
-        //         },
-        //         {
-        //             label: 'Email',
-        //             fieldname: 'email',
-        //             fieldtype: 'Data'
-        //         },
-        //         {
-        //             label: 'Phone',
-        //             fieldname: 'phone',
-        //             fieldtype: 'Data'
-        //         },
-        //         {
-        //             label: 'Age',
-        //             fieldname: 'age',
-        //             fieldtype: 'Int'
-        //         }
-        //     ],
-        //     size: 'small',
-        //     primary_action_label: 'Save',
-        //     primary_action(values) {
-        //         console.log(values);
-        //         D.hide();
-        //     }
-        // })
-        // D.show();
+        let D = new frappe.ui.Dialog({
+            title: 'Enter Details',
+            fields: [
+                {
+                    label: 'Full Name',
+                    fieldname: 'full_name',
+                    fieldtype: 'Data'
+                },
+                {
+                    label: 'Email',
+                    fieldname: 'email',
+                    fieldtype: 'Data'
+                },
+                {
+                    label: 'Phone',
+                    fieldname: 'phone',
+                    fieldtype: 'Data'
+                },
+                {
+                    label: 'Age',
+                    fieldname: 'age',
+                    fieldtype: 'Int'
+                }
+            ],
+            size: 'small',
+            primary_action_label: 'Save',
+            primary_action(values) {
+                console.log(values);
+                D.hide();
+            }
+        })
+        D.show();
 
         // frappe.msgprint(__('Document Opened Successfully!'))
 

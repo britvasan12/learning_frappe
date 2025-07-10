@@ -257,4 +257,46 @@ doc_events = {
 }
 
 
-app_include_js = "/assets/learning_frappe/js/alert.js"
+# app_include_js = "/assets/learning_frappe/js/alert.js"
+
+
+# scheduler_events = {
+#     "daily": [
+#         "learning_frappe.learning_frappe.api.scheduler_test.daily_task"
+#     ],
+#     "hourly": [
+#         "learning_frappe.learning_frappe.api.scheduler_test.hourly_task"
+#     ]
+# }
+
+# scheduler_events = {
+#     "cron": {
+#         "*/1 * * * *": [
+#             "learning_frappe.api.scheduler_test.daily_task"
+#         ]
+#     }
+# }
+
+# scheduler_events = {
+#     "cron": {
+#         "*/1 * * * *": [
+#             "learning_frappe.api.scheduler_test.push_sales_data"
+#         ]
+#     }
+# }
+
+# scheduler_events = {
+#     "cron": {
+#         "*/1 * * * *": [
+#             "learning_frappe.api.scheduler_test.daily_task"
+#         ]
+#     }
+# }
+
+
+scheduler_events = {
+    
+    "all":[
+        "learning_frappe.api.scheduler_test.send_test_record"
+    ]
+}

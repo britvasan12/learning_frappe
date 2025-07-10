@@ -15,7 +15,7 @@ def student_data(name):
 
 	doc = frappe.get_doc('Student Mark', name)
 
-	# frappe.log_error("Data",frappe.as_json(doc))
+	frappe.log_error("Data",frappe.as_json(doc))
 
 	return {
 		"name": doc.name,

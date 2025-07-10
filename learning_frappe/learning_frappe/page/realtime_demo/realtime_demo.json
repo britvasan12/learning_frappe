@@ -1,19 +1,19 @@
 {
  "content": null,
- "creation": "2025-07-04 15:16:11.415746",
+ "creation": "2025-07-09 11:10:17.804625",
  "docstatus": 0,
  "doctype": "Page",
  "idx": 0,
- "modified": "2025-07-09 11:01:54.872060",
+ "modified": "2025-07-09 11:37:48.335013",
  "modified_by": "Administrator",
  "module": "Learning Frappe",
- "name": "board-view",
+ "name": "realtime-demo",
  "owner": "Administrator",
- "page_name": "board-view",
+ "page_name": "realtime-demo",
  "roles": [],
  "script": null,
  "standard": "Yes",
  "style": null,
- "system_page": 0,
- "title": "Kanban Board"
+ "system_page": 1,
+ "title": "Realtime Demo"
 }
