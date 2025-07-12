@@ -20,19 +20,19 @@ from frappe.utils import now
 #     frappe.publish_realtime("sales_realtime_event", data)
 
 
-@frappe.whitelist()
-def send_test_record():
+# @frappe.whitelist()
+# def send_test_record():
 
-    age = random.randint(18,25)
-    full_name = 'Brit'
+#     age = random.randint(18,25)
+#     full_name = 'Brit'
 
-    doc = frappe.get_doc({
-        'doctype': 'Test',
-        'full_name': full_name,
-        'age': age
-    })
+#     doc = frappe.get_doc({
+#         'doctype': 'Test',
+#         'full_name': full_name,
+#         'age': age
+#     })
 
-    doc.insert(ignore_permissions = True)
-    frappe.db.commit()
+#     doc.insert(ignore_permissions = True)
+#     frappe.db.commit()
 
-    frappe.log_error("Test Scheduler", f"Created Test record: {full_name}, Age: {age}")
+#     frappe.log_error("Test Scheduler", f"Created Test record: {full_name}, Age: {age}")

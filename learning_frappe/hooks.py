@@ -246,15 +246,15 @@ app_license = "mit"
 #     "Ticket Booking": "public/js/ticket_booking_list.js"
 # }
 
-doc_events = {
-    "Task": {
-        "after_insert": "learning_frappe.learning_frappe.realtime.notify_task",
-        "on_update": "learning_frappe.learning_frappe.realtime.notify_task",
-    },
-    # "Task Comment": {
-    #     "after_insert": "learning_frappe.learning_frappe.realtime.notify_comment",
-    # },
-}
+# doc_events = {
+#     "Task": {
+#         "after_insert": "learning_frappe.learning_frappe.realtime.notify_task",
+#         "on_update": "learning_frappe.learning_frappe.realtime.notify_task",
+#     },
+#     "Task Comment": {
+#         "after_insert": "learning_frappe.learning_frappe.realtime.notify_comment",
+#     },
+# }
 
 
 # app_include_js = "/assets/learning_frappe/js/alert.js"
@@ -294,9 +294,18 @@ doc_events = {
 # }
 
 
-scheduler_events = {
+# scheduler_events = {
     
-    "all":[
-        "learning_frappe.api.scheduler_test.send_test_record"
-    ]
-}
+#     "all":[
+#         "learning_frappe.api.scheduler_test.send_test_record"
+#     ]
+# }
+
+# scheduler_events = {
+#     "cron": {
+#         "*/1 * * * *": [
+#             "learning_frappe.learning_frappe.api.push_leave_update"
+#         ]
+#     }
+# }
+

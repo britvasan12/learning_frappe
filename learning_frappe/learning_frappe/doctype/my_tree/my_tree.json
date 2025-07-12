@@ -1,32 +1,23 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:tree_name",
  "creation": "2025-07-10 17:10:12.569856",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "section_break_cggu",
-  "amended_from",
   "lft",
   "rgt",
   "is_group",
-  "old_parent",
-  "parent_my_tree"
+  "tree_name",
+  "parent_my_tree",
+  "old_parent"
  ],
  "fields": [
   {
    "fieldname": "section_break_cggu",
    "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "My Tree",
-   "print_hide": 1,
-   "read_only": 1,
-   "search_index": 1
   },
   {
    "fieldname": "lft",
@@ -45,6 +36,7 @@
    "read_only": 1
   },
   {
+   "default": "0",
    "fieldname": "is_group",
    "fieldtype": "Check",
    "label": "Is Group"
@@ -53,7 +45,8 @@
    "fieldname": "old_parent",
    "fieldtype": "Link",
    "label": "Old Parent",
-   "options": "My Tree"
+   "options": "My Tree",
+   "read_only": 1
   },
   {
    "fieldname": "parent_my_tree",
@@ -61,17 +54,23 @@
    "ignore_user_permissions": 1,
    "label": "Parent My Tree",
    "options": "My Tree"
+  },
+  {
+   "fieldname": "tree_name",
+   "fieldtype": "Data",
+   "label": "Tree Name",
+   "unique": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
- "is_submittable": 1,
  "is_tree": 1,
  "links": [],
- "modified": "2025-07-10 17:10:12.569856",
+ "modified": "2025-07-11 10:57:24.819732",
  "modified_by": "Administrator",
  "module": "Learning Frappe",
  "name": "My Tree",
+ "naming_rule": "By fieldname",
  "nsm_parent_field": "parent_my_tree",
  "owner": "Administrator",
  "permissions": [
@@ -85,7 +84,6 @@
    "report": 1,
    "role": "System Manager",
    "share": 1,
-   "submit": 1,
    "write": 1
   }
  ],

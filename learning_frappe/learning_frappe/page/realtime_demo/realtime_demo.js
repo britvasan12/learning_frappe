@@ -99,7 +99,7 @@
 // 	wrapper.innerHTML += `<div id="mychart" style="margin-top: 20px; height: 300px;"></div>`;
 
 // 	let data = {
-// 		labels: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+// 		labels: [],
 // 		datasets: [{
 // 			name: 'Leave Count',
 // 			values: []  
@@ -129,32 +129,32 @@
 // };
 
 
-frappe.pages['realtime-demo'].on_page_load = function(wrapper){
-	let page = frappe.ui.make_app_page({
-		parent: wrapper,
-		title: 'Realtime Chart Demo',
-		single_column: true
-	});
+// frappe.pages['realtime-demo'].on_page_load = function(wrapper){
+// 	let page = frappe.ui.make_app_page({
+// 		parent: wrapper,
+// 		title: 'Realtime Chart Demo',
+// 		single_column: true
+// 	});
 	
-	wrapper.innerHTML += `<div id="chart" style="margin-top: 20px; height: 300px;"></div>`;
+// 	wrapper.innerHTML += `<div id="chart" style="margin-top: 20px; height: 300px;"></div>`;
 
-	let data = {
-		labels: [],  
-		datasets: [
-			{
-				name: 'Leave Count',
-				values: []
-			}
-		]
-	};
+// 	let data = {
+// 		labels: [],  
+// 		datasets: [
+// 			{
+// 				name: 'Leave Count',
+// 				values: []
+// 			}
+// 		]
+// 	};
 
-	let my_chart = new frappe.ui.RealtimeChart('#chart', 'leave_count_realtime', 10, {
-		title: 'Leave Data Chart',
-		data: data,
-		type: 'line',
-		height: 250,
-		colors: ['#7cd6fd']
-	});
+// 	let my_chart = new frappe.ui.RealtimeChart('#chart', 'leave_count_realtime', 10, {
+// 		title: 'Leave Data Chart',
+// 		data: data,
+// 		type: 'line',
+// 		height: 250,
+// 		colors: ['#7cd6fd']
+// 	});
 
-	my_chart.start_updating();
-}
+// 	my_chart.start_updating();
+// }

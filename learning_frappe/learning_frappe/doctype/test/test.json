@@ -7,8 +7,11 @@
  "engine": "InnoDB",
  "field_order": [
   "full_name",
+  "barcode",
   "column_break_ynkm",
-  "age"
+  "age",
+  "section_break_amxv",
+  "test_child"
  ],
  "fields": [
   {
@@ -24,12 +27,27 @@
    "fieldname": "full_name",
    "fieldtype": "Data",
    "label": "Full Name"
+  },
+  {
+   "fieldname": "barcode",
+   "fieldtype": "Barcode",
+   "label": "Barcode"
+  },
+  {
+   "fieldname": "section_break_amxv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "test_child",
+   "fieldtype": "Table",
+   "label": "Test Child",
+   "options": "Test Child"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-10 17:45:57.624748",
+ "modified": "2025-07-12 16:27:43.882633",
  "modified_by": "Administrator",
  "module": "Learning Frappe",
  "name": "Test",
@@ -45,6 +63,18 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
    "share": 1,
    "write": 1
   }
