@@ -5,46 +5,46 @@
 // This code is set the values to the corresponding link fields like linkedin, github and other
 
 
-// frappe.ui.form.on("Scanner API", {
-//     refresh(frm) {
-//         frm.add_custom_button('QR Scanner', () => {
-//             new frappe.ui.Scanner({
-//                 dialog: true,
-//                 multiple: false,
-//                 on_scan(data) {
-//                     const scanned_value = data.decodedText;
-//                     console.log('Raw Scanned Values', scanned_value);
+frappe.ui.form.on("Scanner API", {
+    refresh(frm) {
+        frm.add_custom_button('QR Scanner', () => {
+            new frappe.ui.Scanner({
+                dialog: true,
+                multiple: false,
+                on_scan(data) {
+                    const scanned_value = data.decodedText;
+                    console.log('Raw Scanned Values', scanned_value);
 
-//                     link_type = 'other';
+                    link_type = 'other';
 
-//                     if (scanned_value.includes('linkedin.com')) {
-//                         frm.set_value('linkedin_link', scanned_value)
-//                         link_type = 'linkedin';
-//                     } else if (scanned_value.includes('github.com')) {
-//                         frm.set_value('github_link', scanned_value)
-//                         link_type = 'github';
-//                     } else {
-//                         frm.set_value('other_link', scanned_value)
-//                     }
+                    if (scanned_value.includes('linkedin.com')) {
+                        frm.set_value('linkedin_link', scanned_value)
+                        link_type = 'linkedin';
+                    } else if (scanned_value.includes('github.com')) {
+                        frm.set_value('github_link', scanned_value)
+                        link_type = 'github';
+                    } else {
+                        frm.set_value('other_link', scanned_value)
+                    }
 
-//                     // let external = scanned_value.startsWith('http');
-//                     // console.log(external);
+                    // let external = scanned_value.startsWith('http');
+                    // console.log(external);
                     
-//                     let go_to_link = '';
-//                     if(link_type !== 'other' && scanned_value.startsWith('http')){
-//                         go_to_link = `<a href="${scanned_value}" ${external ? 'target="_blank"':''} style="color:blue; text-decoration:underline;">Go to link</a>`
-//                     }
+                    let go_to_link = '';
+                    if(link_type !== 'other' && scanned_value.startsWith('http')){
+                        go_to_link = `<a href="${scanned_value}" ${external ? 'target="_blank"':''} style="color:blue; text-decoration:underline;">Go to link</a>`
+                    }
 
-//                     frappe.msgprint({   
-//                         title: 'Navigate to the Link',
-//                         indicator: 'green',
-//                         message: `Scanned Value: <b>${scanned_value}</b></br> ${go_to_link}`
-//                     })
-//                 }
-//             })
-//         })
-//     },
-// });
+                    frappe.msgprint({   
+                        title: 'Navigate to the Link',
+                        indicator: 'green',
+                        message: `Scanned Value: <b>${scanned_value}</b></br> ${go_to_link}`
+                    })
+                }
+            })
+        })
+    },
+});
 
 // -------------------------------------------------------------------------------------------------
 

@@ -309,3 +309,9 @@ app_license = "mit"
 #     }
 # }
 
+
+
+doctype_list_js = {
+    "Database API": "public/js/movie.js"
+}
+

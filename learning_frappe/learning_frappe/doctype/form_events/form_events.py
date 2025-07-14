@@ -5,7 +5,7 @@ import frappe
 from frappe.model.document import Document
 
 
-class DemoTotal(Document):
+class FormEvents(Document):
 	pass
 
 

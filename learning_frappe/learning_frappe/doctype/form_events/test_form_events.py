@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestDemoTotal(FrappeTestCase):
+class TestFormEvents(FrappeTestCase):
 	pass
