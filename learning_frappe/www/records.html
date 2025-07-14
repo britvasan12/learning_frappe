@@ -1,0 +1,120 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<h2 class="mb-4">My Data Records</h2>
+
+<table class="table table-bordered">
+   <thead class="table-light">
+       <tr>
+         <th>Full Name</th>
+         <th>Phone</th>
+         <th>Email</th>
+         <th>DOB</th>
+         <th>Age</th>
+         <th>Salary</th>
+       </tr>
+   </thead>
+   <tbody>
+    {% for data in datas %}
+        {% if data %}
+        <tr>
+            <td>{{ data.full_name }}</td>
+            <td>{{ data.phone }}</td>
+            <td>{{ data.email }}</td>
+            <td>{{ frappe.format_date(data.dob) }}</td>
+            <td>{{ data.age }}</td>
+            <td>{{ frappe.format(data.salary, {'fieldtype':'Currency','options':'INR'}, data) }}</td>
+        </tr>
+        {% endif %} 
+    {% else %}
+        <tr>
+            <td colspan="6" class="text-center text-muted">No Records Found</td>
+        </tr>
+    {% endfor %}
+   </tbody>
+</table>
+
+<!-- frappe.get_url() -->
+<span>Current URL: {{ frappe.get_url() }}</span><br><br>
+
+<!-- frappe.get_doc() -->
+{% set doc = frappe.get_doc('Jinja API', 'Jinja-07-056') %}
+<span>Name: {{doc.full_name}} & Age: {{doc.age}}</span><br><br>
+
+<!-- frappe.get_all() -->
+{% set doc = frappe.get_all('Jinja API', fields=['full_name', 'dob'], order_by = 'dob asc') %}
+{% for d in doc %}
+<ul>
+  <li>{{ d.full_name }}</li>
+  <li>{{ frappe.format(d.dob) }}</li>
+</ul>
+{% endfor %}
+
+<!-- frappe.get_value() -->
+{% set result = frappe.db.get_value('Jinja API', 'Jinja-07-056', 'email') %}
+<span>Email in Current record: {{ result }}</span><br><br>
+
+<!-- frappe.db.get_single_value -->
+
+{% set timezone = frappe.db.get_single_value('System Settings', 'time_zone') %}
+<span>Timezone: {{ timezone }}</span><br><br>
+
+<!-- frappe.get_system_settings -->
+{% if frappe.get_system_settings('country') == 'India' %}
+<span>India</span>
+{% else %}
+<span>No India</span>
+{% endif %}
+<br><br>
+<!-- frappe.get_meta() -->
+
+{% set meta = frappe.get_meta('Jinja API') %}
+
+<p>Jinja API has {{ meta.fields | len }} Fields</p><br>
+<span>Jinja API all fields and and their fieldtype</span><br><br>
+{% for fields in meta.fields %}
+{% if fields %}
+<ul>
+  <li>{{ fields.fieldname }} - {{ fields.fieldtype }}</li>
+</ul>
+{% endif %}
+{% endfor %}
+
+{% if meta.get_field('salary') %}
+<p>If condition check for salary: <span>It have salary field</span></p>
+{% endif %}
+<br><br>
+
+<!-- frappe.get_fullname() -->
+{% set name = frappe.get_fullname('britvasan@tridotstech.com') %}
+<p>Hello, {{ name }}</p>
+
+<!-- frappe.render_template -->
+
+{{ frappe.render_template("Hello, {{ name }}!", {"name": "Brit"}) }}
+<br><br>
+<!-- frappe.lang -->
+
+<p>Current Language: {{ frappe.lang }}</p>
+
+<!-- frappe.session.user -->
+
+<p>Logged in user: {{ frappe.session.user }}</p>
+
+<!-- frappe._(string) or _(string) -->
+
+{{ _('This string should get translated') }}
+<br><br>
+
+<!-- <input type="hidden" name="csrf_token" value="{{ frappe.session.csrf_token }}"> -->
+<p>CSRF Token: {{ frappe.session.csrf_token }}</p>
+
+<!-- frappe.form_dict -->
+
+<p>Name: {{ frappe.form_dict.full_name }}</p>
+<p>Age: {{ frappe.form_dict.age }}</p>
+
+
+
+
+{% endblock %}

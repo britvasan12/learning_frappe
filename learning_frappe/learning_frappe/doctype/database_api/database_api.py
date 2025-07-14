@@ -36,7 +36,7 @@ def random():
 		# fields = ['name', 'movie_name', 'release_date'],
 		# order_by = 'release_date asc'
 
-		# filters = [
+		# filters = [   
 		# 	['release_date', 'between', ['2025-07-01', '2025-07-19']]
 		# ],
 		# fields = ['name', 'movie_name', 'release_date'],

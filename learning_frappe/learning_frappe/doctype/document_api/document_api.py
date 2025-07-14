@@ -25,7 +25,7 @@ class DocumentAPI(Document):
 # 		else:
 # 			doc2 = frappe.get_doc({
 # 				'doctype': 'Test',
-# 				'full_name': 'Raja',
+# 				'full_name  ': 'Raja',
 # 				'age': '59'
 # 			})
 # 			doc2.insert()
