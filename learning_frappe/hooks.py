@@ -312,6 +312,7 @@ app_license = "mit"
 
 
 doctype_list_js = {
-    "Database API": "public/js/movie.js"
+    "Database API": "public/js/movie.js",
+    'Utility Function': 'public/js/utility.js'
 }
 
