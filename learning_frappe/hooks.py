@@ -316,3 +316,26 @@ doctype_list_js = {
     'Utility Function': 'public/js/utility.js'
 }
 
+permission_query_conditions = {
+    "Personal Notes": "learning_frappe.permissions.personal_note_query"
+}
+
+has_permission = {
+    "Events": "learning_frappe.permissions.event_has_permission"
+}
+
+override_doctype_class = {
+    "Event": "learning_frappe.overrides.event.CustomEvent"
+}
+
+doc_events = {
+    "Events": {
+        "before_insert": "learning_frappe.crud_events.check_private_event_permissions"
+    }
+}
+
+override_whitelisted_methods = {
+    "frappe.client.get_count": "learning_frappe.whitelisted.custom_get_count"
+}
+
+ignore_links_on_delete = ["Sub Record"]

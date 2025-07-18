@@ -1,0 +1,45 @@
+**Hooks Topics**
+----------------------------------------------------
+
+--> Topic: Document Hooks - Modify List Query (permission_query_conditions)
+
+“Namma DocType (like ToDo) la, list vaanga koodiya query ah customize panna use pannuvom. 
+Oru user-ku enna data kaatta vendum nu condition podlaam.”
+-----------------------------------------------------------------------------------------
+--> Topic: Document Permissions using has_permission hook
+
+"has_permission hook use panni, oru document ku read, write, delete permission check panna custom logic podlaam. 
+Ithu namma rules base panni document access allow or deny pannum."
+----------------------------------------------------------------------------------------
+--> Topic: Override DocType Class using override_doctype_class Hook
+
+Frappe la oru standard Doctype (like ToDo) already have class-based logic.
+But sometimes, we want to inject our own logic into lifecycle methods like on_update, before_save, on_submit, etc.
+
+Using override_doctype_class, we can say: "ToDo DocType ku instead of default logic, use my own class (which extends default logic)."
+------------------------------------------------------------------------------------------
+--> Topic: Override Form Scripts in Frappe
+
+Frappe la oru Doctype form open aagumbothu, standard JS scripts load aagum.
+Neenga ungaloda custom script ah inject panna hooks.py la doctype_js use panrenga.
+
+------------------------------------------------------------------------------------------
+-->  Topic: CRUD Events in Frappe
+
+Namma Doctype la edhaavadhu record create, update, delete aagumbothu,
+adhukku munnadi illa apram custom code nadakka venumna use panradhu.
+------------------------------------------------------------------------------------------
+
+--> Topic:Override Whitelisted Methods 
+
+Core-la irukka API methods ah, unga logic vechi replace panna use panradhu dhaan override_whitelisted_methods hook.
+
+------------------------------------------------------------------------------------------
+
+--> Topic:ignore_links_on_delete 
+
+Usually, when you try to delete a DocType, Frappe will block it if other documents are linked to it (like ToDo, Communication, etc).
+But sometimes, you want to delete it even if links exist — like soft info (logs, notes, reminders).
+So ignore_links_on_delete hook use pannuvom to tell Frappe: “Bro, if these doctypes are linked, ignore it… just delete.”
+
+-----------------------------------------------------------------------------------------

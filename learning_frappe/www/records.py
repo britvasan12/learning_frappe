@@ -1,7 +1,7 @@
 import frappe
 
 def get_context(context):
-    frappe.log_error("context",context)
+    # frappe.log_error("context",context)
     context.datas = frappe.get_all(
         'Jinja API',
         fields = ['full_name', 'phone', 'email', 'dob', 'age', 'salary'],
