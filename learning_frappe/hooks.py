@@ -339,3 +339,21 @@ override_whitelisted_methods = {
 }
 
 ignore_links_on_delete = ["Sub Record"]
+
+# additional_timeline_content = {
+#     "Events": ["learning_frappe.timeline.event_timeline.event_timeline"]
+# }
+
+before_migrate = "learning_frappe.migrate.before_migrate"
+after_migrate = "learning_frappe.migrate.after_migrate"
+
+jinja = {
+    "methods": [
+        "learning_frappe.jinja.methods",
+        "learning_frappe.utils.get_fullname"
+    ],
+    "filters": [
+        "learning_frappe.jinja.filters",
+        "learning_frappe.utils.format_currency"
+    ]
+}

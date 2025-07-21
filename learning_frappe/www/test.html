@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jinja Custom Demo</title>
+</head>
+<body>
+    <h1>Jinja Custom Utilities</h1>
+
+    <p><strong>Sum of 1 + 1:</strong> {{ sum(1, 1) }}</p>
+    <p><strong>Product of 2 x 2:</strong> {{ multiply(2, 2) }}</p>
+
+    <p><strong>User Full Name:</strong> {{ get_fullname(frappe.session.user) }}</p>
+    <p><strong>Balance:</strong> {{ 1500.678 | format_currency("₹") }}</p>
+
+    <p><strong>Reversed Name:</strong> {{ "Britvasan" | reverse_string }}</p>
+    <p><strong>Uppercase Name:</strong> {{ "hello world" | upper_case }}</p>
+</body>
+</html>
