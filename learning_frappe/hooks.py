@@ -357,3 +357,12 @@ jinja = {
         "learning_frappe.utils.format_currency"
     ]
 }
+
+# on_login = "learning_frappe.overrides.successful_login"
+# on_logout = "learning_frappe.overrides.clear_data"
+
+# learning_frappe/hooks.py
+
+# extend_website_page_controller_context = {
+#     "frappe.www.404": "learning_frappe.pages.custom_404_context"
+# }

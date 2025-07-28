@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2025-07-28 10:52:52.485403",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "student_name",
+  "email",
+  "status",
+  "column_break_apnw",
+  "contact",
+  "class_and_sec",
+  "dob",
+  "section_break_eiry",
+  "student_fee"
+ ],
+ "fields": [
+  {
+   "fieldname": "student_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Student Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "\nDay Scholler\nHosteller",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_apnw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contact",
+   "fieldtype": "Phone",
+   "in_list_view": 1,
+   "label": "Contact",
+   "reqd": 1
+  },
+  {
+   "fieldname": "class_and_sec",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Class and Sec",
+   "reqd": 1
+  },
+  {
+   "fieldname": "dob",
+   "fieldtype": "Date",
+   "label": "DOB"
+  },
+  {
+   "fieldname": "section_break_eiry",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "student_fee",
+   "fieldtype": "Table",
+   "label": "Student Fee",
+   "options": "Student Fee"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-07-28 11:16:41.791597",
+ "modified_by": "Administrator",
+ "module": "Learning Frappe",
+ "name": "Student Record",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

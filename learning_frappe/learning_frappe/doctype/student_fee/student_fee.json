@@ -1,0 +1,49 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-28 11:14:49.367326",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "fees",
+  "first_graduate",
+  "paid"
+ ],
+ "fields": [
+  {
+   "fieldname": "fees",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Fees"
+  },
+  {
+   "fieldname": "first_graduate",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "First Graduate",
+   "options": "\nYes\nNo"
+  },
+  {
+   "default": "0",
+   "fieldname": "paid",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Paid?"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-07-28 14:49:42.978496",
+ "modified_by": "Administrator",
+ "module": "Learning Frappe",
+ "name": "Student Fee",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
