@@ -2,7 +2,7 @@
 # For license information, please see license.txt
 
 # import frappe
-from frappe.model.document import Document	
+from frappe.model.document import Document
 # from pypika.functions import Count
 # from pypika.functions import Avg
 # from pypika.functions import Sum

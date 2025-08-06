@@ -309,6 +309,16 @@ app_license = "mit"
 #     }
 # }
 
+app_include_js = [
+    "/assets/learning_frappe/js/custom_sounds.js"
+]
+
+sounds = [
+    {
+        "name": "custom_delete",
+        "src": "/assets/learning_frappe/sounds/custom_delete.mp3"
+    }
+]
 
 
 doctype_list_js = {
